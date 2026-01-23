@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Box Pattern</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f2f2f2;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 170px);
+            grid-template-rows: repeat(3, 170px);
+            gap: px;
+            background: #ddd;
+            padding: 5px;
+        }
+
+        .box {
+            background: #f5e6a8; /* light yellow */
+            border: 1px solid #c9b96e;
+        }
+
+        .blue {
+            background: #00c8d7;
+        }
+
+        .yellow {
+            background: #ffe600;
+        }
+
+        .red {
+            background: #ff3b30;
+        }
+    </style>
+</head>
+<body>
+
+<div class="grid-container">
+    <div class="box blue"></div>
+    <div class="box yellow"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div class="box red"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</div>
+
+</body>
+</html>

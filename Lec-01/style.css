@@ -1,0 +1,35 @@
+body {
+    margin: auto ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eef0ee; /* light blue background */
+}
+
+.container {
+    width: 300px;
+    height: 100px;
+    position: relative;
+}   
+
+.ball {
+    width: 75px;
+    height: 75px;
+    background: radial-gradient(circle at 30% 30%, #f40505, #ef4ecc);
+    border-radius: 100%;
+    position: absolute;
+    left: 0;
+    top: 30px;
+    animation: moveBall .65s ease-in-out infinite alternate;
+}
+
+/* Animation */
+@keyframes moveBall {
+    from {
+        top: 0;
+    }
+    to {
+        top: 260px;
+    }
+}

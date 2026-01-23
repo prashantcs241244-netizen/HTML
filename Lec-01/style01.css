@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f4f4f4;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Masonry layout */
+.gallery {
+    column-count: 4;
+    column-gap: px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery img {
+    width: 100%;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    display: block;
+    break-inside: avoid;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gallery {
+        column-count: 1;
+    }
+}

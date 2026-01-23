@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Balloon Festival Animation</title>
+<style>
+    body {
+        margin: 0;
+        overflow: hidden;
+        height: 100vh;
+        background: linear-gradient(to top, #aff5a5, #94d2e0);
+    }
+
+    .scene {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Balloon body */
+    .balloon {
+        position: absolute;
+        bottom: -200px;
+        width: 80px;
+        height: 100px;
+        border-radius: 50% 50% 45% 45%;
+        animation: floatUp 10s linear infinite;
+    }
+
+    
+
+    /* Rope */
+    .balloon::before {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 38px;
+        width: 2px;
+        height: 25px;
+        background: #333;
+    }
+
+    /* Individual balloons */
+    .b1 { left: 10%; background: red; animation-duration: 14s; }
+    .b2 { left: 30%; background: orange; animation-duration: 12s; }
+    .b3 { left: 50%; background: yellow; animation-duration: 16s; }
+    .b4 { left: 70%; background: purple; animation-duration: 13s; }
+    .b5 { left: 90%; background: green; animation-duration: 15s; }
+
+    @keyframes floatUp {
+        0% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(-120vh);
+            opacity: 1;
+        }
+    }
+    .onr{
+        position
+: absolute;
+        top:50px;
+        left:50%;
+        transform: translateX(-50%);
+        font-size: 50px;
+        font-weight: bold;
+        color:crimson
+    }
+    .os{
+        width:200px;
+        height: 200px;
+        position: absolute;
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+</style>
+</head>
+<body>
+
+<div class="scene">
+    <div class="onr">🎉Welcome to Balloon Festival🎈</div>
+    <div class="balloon b1"></div>
+    <div class="balloon b2"></div>
+    <div class="balloon b3"></div>
+    <div class="balloon b4"></div>
+    <div class="balloon b5"></div>
+    <div class="os"><img src=image1.jpg /></div>
+</div>
+
+</body>
+</html>
